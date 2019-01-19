@@ -19,10 +19,10 @@
 		<repository>
 			<id>maven</id>
 			<name>Central Repository</name>
-			<url>https://repo.maven.apache.org/maven2/</url>
+			<url>http://repo.maven.apache.org/maven2/</url>
 			<layout>default</layout>
 			<snapshots>
-				<enabled>true</enabled>
+			<enabled>true</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
@@ -30,13 +30,13 @@
 		<pluginRepository>
 			<id>maven</id>
 			<name>Central Repository</name>
-			<url>https://repo.maven.apache.org/maven2/</url>
+			<url>http://repo.maven.apache.org/maven2/</url>
 			<layout>default</layout>
 			<snapshots>
-				<enabled>false</enabled>
+			<enabled>true</enabled>
 			</snapshots>
 			<releases>
-				<updatePolicy>never</updatePolicy>
+			<updatePolicy>never</updatePolicy>
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
