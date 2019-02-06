@@ -7,15 +7,11 @@ pipeline {
                  sh 'mvn -B -DskipTests clean package' 
             }
         }
-        
-        stage(‘Archive’) {
-             when {
-                branch ‘*/master’
-                  }
-                steps {
-                archive '*/target/**/*'
-                junit '*/target/surefire-reports/*.xml'
-
-        
+     }
+ post {
+        always {
+            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+        }
     }
+    
 }
