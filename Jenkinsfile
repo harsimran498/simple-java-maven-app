@@ -13,8 +13,8 @@ pipeline {
                 branch ‘*/master’
                   }
                 steps {
-                archive ‘*/target/**/*’
-                junit ‘*/target/surefire-reports/*.xml’
+                archive '*/target/**/*'
+                junit '*/target/surefire-reports/*.xml'
 
         
     }
